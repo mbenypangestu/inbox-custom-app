@@ -450,7 +450,9 @@
                                 {
                                     "field_title": "Decision",
                                     "field_type": "dropdown",
-                                    "field_value": ["Reject"],
+                                    "field_value": [
+                                        "Reject"
+                                    ],
                                     "class_hierarchical_level": "l3",
                                     "dynamic_hirarchical_field": [
                                         {
@@ -1048,8 +1050,8 @@
                                                 },
                                                 {
                                                     "field_title": "Jenis Transaksi Kartu Debit",
-                                                    "field_type": "input",
-                                                    "field_value": "",
+                                                    "field_type": "dropdown",
+                                                    "field_value": ["Transaksi Offline"],
                                                     "class_hierarchical_level": "l4",
                                                     "dynamic_hirarchical_field": []
                                                 },
@@ -1193,8 +1195,8 @@
                                                 },
                                                 {
                                                     "field_title": "Jenis Transaksi Kartu Debit",
-                                                    "field_type": "input",
-                                                    "field_value": "",
+                                                    "field_type": "dropdown",
+                                                    "field_value": ["Transaksi Offline"],
                                                     "class_hierarchical_level": "l4",
                                                     "dynamic_hirarchical_field": []
                                                 },
@@ -1331,8 +1333,8 @@
                                                 },
                                                 {
                                                     "field_title": "Jenis Transaksi Kartu Debit",
-                                                    "field_type": "input",
-                                                    "field_value": "",
+                                                    "field_type": "dropdown",
+                                                    "field_value": ["Transaksi Offline"],
                                                     "class_hierarchical_level": "l4",
                                                     "dynamic_hirarchical_field": []
                                                 },
@@ -1469,8 +1471,8 @@
                                                 },
                                                 {
                                                     "field_title": "Jenis Transaksi Kartu Debit",
-                                                    "field_type": "input",
-                                                    "field_value": "",
+                                                    "field_type": "dropdown",
+                                                    "field_value": ["Transaksi Offline"],
                                                     "class_hierarchical_level": "l4",
                                                     "dynamic_hirarchical_field": []
                                                 },
@@ -1600,8 +1602,8 @@
                                                 },
                                                 {
                                                     "field_title": "Jenis Transaksi Kartu Debit",
-                                                    "field_type": "input",
-                                                    "field_value": "",
+                                                    "field_type": "dropdown",
+                                                    "field_value": ["Transaksi Offline"],
                                                     "class_hierarchical_level": "l4",
                                                     "dynamic_hirarchical_field": []
                                                 },
@@ -1731,8 +1733,8 @@
                                                 },
                                                 {
                                                     "field_title": "Jenis Transaksi Kartu Debit",
-                                                    "field_type": "input",
-                                                    "field_value": "",
+                                                    "field_type": "dropdown",
+                                                    "field_value": ["Transaksi Offline"],
                                                     "class_hierarchical_level": "l4",
                                                     "dynamic_hirarchical_field": []
                                                 },
@@ -1862,8 +1864,8 @@
                                                 },
                                                 {
                                                     "field_title": "Jenis Transaksi Kartu Debit",
-                                                    "field_type": "input",
-                                                    "field_value": "",
+                                                    "field_type": "dropdown",
+                                                    "field_value": ["Transaksi Offline"],
                                                     "class_hierarchical_level": "l4",
                                                     "dynamic_hirarchical_field": []
                                                 },
@@ -2590,6 +2592,337 @@
                                             "choosen_value": "Penarikan Uang di ATM",
                                             "field_list_details": [
                                                 {
+                                                    "field_title": "Sub Penarikan uang di ATM",
+                                                    "field_type": "dropdown",
+                                                    "field_value": [
+                                                        "Uang keluar sebagian di ATM Bank Lain",
+                                                        "Uang keluar sebagian di ATM Jago",
+                                                        "Kartu ATM tertelan di ATM Bank Lain",
+                                                        "Kartu ATM tertelan di ATM Jago",
+                                                        "Transaksi Tidak Dikenal",
+                                                        "Uang Tidak Keluar di ATM Bank Lain",
+                                                        "Uang Tidak Keluar di ATM Jago"
+                                                    ],
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field": [
+                                                        {
+                                                            "choosen_value": "Uang keluar sebagian di ATM Bank Lain",
+                                                            "field_list_details": [
+                                                                {
+                                                                    "field_title": "Nominal yang Keluar",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Tanggal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nama Bank",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Follow Up Date (Required when solved)",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Lokasi ATM",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nominal Transaksi Sebenarnya",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Jam Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "choosen_value": "Uang keluar sebagian di ATM Jago",
+                                                            "field_list_details": [
+                                                                {
+                                                                    "field_title": "Nominal yang Keluar",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Tanggal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Lokasi ATM Bank Jago",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nama Bank",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Follow Up Date (Required when solved)",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nominal Transaksi Sebenarnya",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Jam Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "choosen_value": "Kartu ATM tertelan di ATM Bank Lain",
+                                                            "field_list_details": [
+                                                                {
+                                                                    "field_title": "Tanggal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nama Bank",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Follow Up Date (Required when solved)",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Lokasi ATM",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "choosen_value": "Kartu ATM tertelan di ATM Jago",
+                                                            "field_list_details": [
+                                                                {
+                                                                    "field_title": "Tanggal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Lokasi ATM Bank Jago",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nama Bank",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Follow Up Date (Required when solved)",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "choosen_value": "Transaksi Tidak Dikenal",
+                                                            "field_list_details": [
+                                                                {
+                                                                    "field_title": "Tanggal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nama Bank",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Follow Up Date (Required when solved)",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Lokasi ATM",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nominal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Jam Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "choosen_value": "Uang Tidak Keluar di ATM Bank Lain",
+                                                            "field_list_details": [
+                                                                {
+                                                                    "field_title": "Tanggal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nama Bank",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Follow Up Date (Required when solved)",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Lokasi ATM",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nominal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Jam Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "choosen_value": "Uang Tidak Keluar di ATM Jago",
+                                                            "field_list_details": [
+                                                                {
+                                                                    "field_title": "Tanggal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Lokasi ATM Bank Jago",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nama Bank",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Follow Up Date (Required when solved)",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Nominal Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                },
+                                                                {
+                                                                    "field_title": "Jam Transaksi",
+                                                                    "field_type": "input",
+                                                                    "field_value": "",
+                                                                    "class_hierarchical_level": "l5",
+                                                                    "dynamic_hirarchical_field": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
                                                     "field_title": "Follow Up Date",
                                                     "field_type": "input",
                                                     "field_value": "",
@@ -2597,7 +2930,7 @@
                                                     "dynamic_hirarchical_field": []
                                                 },
                                                 {
-                                                    "field_title": "Sub Penarikan uang di ATM",
+                                                    "field_title": "Transaction ID (RRN)",
                                                     "field_type": "input",
                                                     "field_value": "",
                                                     "class_hierarchical_level": "l4",
@@ -2758,14 +3091,49 @@
                             ]
                         },
                         {
-                            "choosen_value": "Penutupan Rekening/Akun -",
+                            "choosen_value": "Penutupan Rekening/Akun - ",
                             "field_list_details": [
                                 {
                                     "field_title": "Alasan Penutupan Rekening",
-                                    "field_type": "input",
-                                    "field_value": "",
+                                    "field_type": "dropdown",
+                                    "field_value": [
+                                        "Customer's Request - Service given are bad",
+                                        "Customer's Request - Product or features offered are unsuitable"
+                                    ],
                                     "class_hierarchical_level": "l3",
-                                    "dynamic_hirarchical_field": []
+                                    "dynamic_hirarchical_field": [
+                                        {
+                                            "choosen_value": "Customer's Request - Service given are bad",
+                                            "field_list_details": [
+                                                {
+                                                    "field_title": "Deskripsi",
+                                                    "field_type": "input",
+                                                    "field_value": "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field": []
+                                                },
+                                                {
+                                                    "field_title": "Nomor Rekening / Pocket Number",
+                                                    "field_type": "input",
+                                                    "field_value": "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "choosen_value": "Customer's Request - Product or features offered are unsuitable",
+                                            "field_list_details": [
+                                                {
+                                                    "field_title": "Nomor Rekening / Pocket Number",
+                                                    "field_type": "input",
+                                                    "field_value": "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field": []
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         },
@@ -3166,7 +3534,7 @@
                             ]
                         },
                         {
-                            "choosen_value": "Jago Sharia -",
+                            "choosen_value": "Jago Sharia - ",
                             "field_list_details": [
                                 {
                                     "field_title": "Jago Sharia",
@@ -3178,7 +3546,7 @@
                             ]
                         },
                         {
-                            "choosen_value": "Selfie KTP Liveness -",
+                            "choosen_value": "Selfie KTP Liveness - ",
                             "field_list_details": [
                                 {
                                     "field_title": "Document Valid ?",
@@ -3190,7 +3558,7 @@
                             ]
                         },
                         {
-                            "choosen_value": "Account Level -",
+                            "choosen_value": "Account Level - ",
                             "field_list_details": [
                                 {
                                     "field_title": "Account Level Options",
@@ -3202,7 +3570,7 @@
                             ]
                         },
                         {
-                            "choosen_value": "Deposito Syariah -",
+                            "choosen_value": "Deposito Syariah - ",
                             "field_list_details": [
                                 {
                                     "field_title": "Sub Deposito Syariah",
@@ -3250,7 +3618,7 @@
                             ]
                         },
                         {
-                            "choosen_value": "Status Blokir Fraudster -",
+                            "choosen_value": "Status Blokir Fraudster - ",
                             "field_list_details": [
                                 {
                                     "field_title": "Unblock",
@@ -3262,7 +3630,7 @@
                             ]
                         },
                         {
-                            "choosen_value": "Atome -",
+                            "choosen_value": "Atome - ",
                             "field_list_details": [
                                 {
                                     "field_title": "Atome Issue Options",

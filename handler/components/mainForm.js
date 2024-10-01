@@ -5,7 +5,7 @@ export function renderForm(formData) {
     let formHtml = '<form id="customForm">';
 
     // Generate and show the first layer dropdown
-    formHtml += generateField(formData, 1, true);
+    formHtml += generateField(formData, true, false);
 
     // Submit button
     formHtml += '<button type="submit">Submit</button>';
