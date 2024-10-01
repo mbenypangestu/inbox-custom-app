@@ -32,6 +32,7 @@ export function generateField(field, isVisible = false) {
 }
 
 export function addDynamicBehavior(formData) {
+    console.log("===================== Start addDynamicBehavior =========================")
     const formContainer = document.getElementById('formContainer');
     formContainer.addEventListener('change', (event) => {
         const target = event.target;
@@ -73,12 +74,16 @@ export function addDynamicBehavior(formData) {
             }
         }
     });
+    console.log("===================== End addDynamicBehavior =========================")
 }
 
 // Find the matching field based on the selected value and hierarchical level
 function findMatchingField(formData, selectedValue, currentLevel) {
+    console.log("===================== Start addDynamicBehavior =========================")
     console.log("formData.dynamic_hirarchical_field",formData.dynamic_hirarchical_field)
+
     if (parseInt(formData.class_hierarchical_level.replace('l', '')) === currentLevel) {
+        console.log("===================== End First Condition addDynamicBehavior =========================")
         return formData.dynamic_hirarchical_field.find(field => 
             field.choosen_value.toLowerCase() === selectedValue.toLowerCase()
         );
@@ -88,9 +93,11 @@ function findMatchingField(formData, selectedValue, currentLevel) {
     for (const dynamicField of formData.dynamic_hirarchical_field) {
         const result = findMatchingField(dynamicField.field_list_details[dynamicField.field_list_details.length - 1], selectedValue, currentLevel);
         if (result) {
+            console.log("===================== End Second Condition addDynamicBehavior =========================")
             return result;
         }
     }
 
+    console.log("===================== End addDynamicBehavior =========================")
     return null;
 }

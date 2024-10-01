@@ -4,7 +4,7 @@ export function renderForm(formData) {
     const formContainer = document.getElementById('formContainer');
     let formHtml = '<form id="customForm">';
 
-    // Generate the first layer dropdown, always visible | Show the first layer (Form dropdown)
+    // Generate and show the first layer dropdown
     formHtml += generateField(formData, 1, true);
 
     // Submit button
