@@ -19,7 +19,7 @@ h1 {
 
 label {
     display: block;
-    margin: 5px 0;
+    margin: 7px 0;
     font-weight: bold;
     font-size: smaller;
 }
@@ -65,7 +65,7 @@ button:hover {
     background-color: white;
     min-height: 20px;
     font-size: smaller;
-    width: 100%;
+    width: 96%;
     border-radius: 5px;
     padding: 5px;
     z-index: 100;
