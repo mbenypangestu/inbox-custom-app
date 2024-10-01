@@ -1,11 +1,17 @@
-export function generateField(field, isVisible = false) {
+export function generateField(field, isVisible = false, requireds) {
     let fieldHtml = '';
     const visibilityClass = isVisible ? '' : 'hidden';
+
+    // if (requireds && Array.isArray(requireds) && requireds.length) {
+    //     requireds.forEach(required => {
+    //         document.getElementById(required).setAttribute("required", true);
+    //     });
+    // }
 
     if (field.field_type === 'dropdown') {
         fieldHtml += `<div class="field-container ${visibilityClass}" data-level="${field.class_hierarchical_level}">`;
         fieldHtml += `<label for="${field.field_title}">${field.field_title}:</label>`;
-        fieldHtml += `<select id="${field.field_title}" name="${field.field_title}" class="dynamic-dropdown" data-level="${field.class_hierarchical_level}">`;
+        fieldHtml += `<select id="${field.field_title}" name="${field.field_title}" class="dynamic-dropdown" data-level="${field.class_hierarchical_level}" select-one>`;
         fieldHtml += `<option value="" disabled selected>Select ${field.field_title}</option>`;
         field.field_value.forEach(option => {
             fieldHtml += `<option value="${option.toLowerCase()}">${option}</option>`;
@@ -27,13 +33,13 @@ export function generateField(field, isVisible = false) {
         fieldHtml += `<label for="${field.field_title}">${field.field_title}:</label>`;
         fieldHtml += `<input type="number" id="${field.field_title}" name="${field.field_title}" placeholder="${field.field_title}" />`;
         fieldHtml += `</div>`;
-    } 
+    }
 
     // Check for nested dynamic fields and add them recursively, initially Hidden
     if (field.dynamic_hirarchical_field && field.dynamic_hirarchical_field.length > 0) {
         fieldHtml += '<div class="nested-fields">';
         field.dynamic_hirarchical_field.forEach(nestedField => {
-            fieldHtml += generateField(nestedField.field_list_details[0], false); // Nested fields hidden initially
+            fieldHtml += generateField(nestedField.field_list_details[0], false, nestedField.required_fields); // Nested fields hidden initially
         });
         fieldHtml += '</div>';
     }
@@ -89,12 +95,12 @@ export function addDynamicBehavior(formData) {
 
 // Find the matching field based on the selected value and hierarchical level
 function findMatchingField(formData, selectedValue, currentLevel) {
-    console.log({ selectedValue, currentLevel },"===================== Start addDynamicBehavior =========================")
-    console.log("formData.dynamic_hirarchical_field",formData.dynamic_hirarchical_field)
+    console.log({ selectedValue, currentLevel }, "===================== Start addDynamicBehavior =========================")
+    console.log("formData.dynamic_hirarchical_field", formData.dynamic_hirarchical_field)
 
     if (parseInt(formData.class_hierarchical_level.replace('l', '')) === currentLevel) {
         console.log("===================== End First Condition addDynamicBehavior =========================")
-        return formData.dynamic_hirarchical_field.find(field => 
+        return formData.dynamic_hirarchical_field.find(field =>
             field.choosen_value.toLowerCase() === selectedValue.toLowerCase()
         );
     }
