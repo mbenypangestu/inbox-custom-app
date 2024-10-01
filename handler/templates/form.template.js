@@ -33,7 +33,7 @@ export function generateField(field, isVisible = false) {
     if (field.dynamic_hirarchical_field && field.dynamic_hirarchical_field.length > 0) {
         fieldHtml += '<div class="nested-fields">';
         field.dynamic_hirarchical_field.forEach(nestedField => {
-            fieldHtml += generateField(nestedField.field_list_details[nestedField.field_list_details.length - 1], false); // Nested fields hidden initially
+            fieldHtml += generateField(nestedField.field_list_details[0], false); // Nested fields hidden initially
         });
         fieldHtml += '</div>';
     }
@@ -89,7 +89,7 @@ export function addDynamicBehavior(formData) {
 
 // Find the matching field based on the selected value and hierarchical level
 function findMatchingField(formData, selectedValue, currentLevel) {
-    console.log("===================== Start addDynamicBehavior =========================")
+    console.log({ selectedValue, currentLevel },"===================== Start addDynamicBehavior =========================")
     console.log("formData.dynamic_hirarchical_field",formData.dynamic_hirarchical_field)
 
     if (parseInt(formData.class_hierarchical_level.replace('l', '')) === currentLevel) {
@@ -101,7 +101,7 @@ function findMatchingField(formData, selectedValue, currentLevel) {
 
     // Search recursively in the dynamic_hirarchical_field
     for (const dynamicField of formData.dynamic_hirarchical_field) {
-        const result = findMatchingField(dynamicField.field_list_details[dynamicField.field_list_details.length - 1], selectedValue, currentLevel);
+        const result = findMatchingField(dynamicField.field_list_details[0], selectedValue, currentLevel);
         if (result) {
             console.log("===================== End Second Condition addDynamicBehavior =========================")
             return result;
