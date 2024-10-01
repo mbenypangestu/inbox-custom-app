@@ -1,0 +1,239 @@
+{
+    "field_title": "Form",
+    "field_type" : "dropdown",
+    "field_value" : ["Permintaan / Request", "Keluhan / Complaint"],
+    "class_hierarchical_level": "l1",
+    "dynamic_hirarchical_field" : [
+        {
+            "choosen_value" : "Permintaan / Request", 
+            "field_list_details" : [
+                {
+                    "field_title": "Kategori",
+                    "field_type" : "dropdown",
+                    "field_value" : ["Cek Transaksi Kartu", "2FA"],
+                    "class_hierarchical_level": "l2",
+                    "dynamic_hirarchical_field" : [    
+                        {
+                            "choosen_value" : "Cek Transaksi Kartu",
+                            "field_list_details" : [
+                                {
+                                    "field_title": "Auth Status",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Tanggal Blokir/Delete Card",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Need Approval?",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Nama Nasabah",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "4 Digit Card Number",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Tanggal Refund",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Transaction Claim",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Card Acceptor ID",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Is Reported?",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Merge",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Jumlah Transaksi",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Status",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Nominal Refund",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Jam Transaksi",
+                                    "field_type" : "input",
+                                    "field_value" : "",
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : []
+                                },
+                                {
+                                    "field_title": "Sub Transaksi Kartu Debit",
+                                    "field_type" : "dropdown",
+                                    "field_value" : ["Transaksi Kartu Debit", "Mesin EDC", "Penarikan Uang di ATM"],
+                                    "class_hierarchical_level": "l3",
+                                    "dynamic_hirarchical_field" : [
+                                        {
+                                            "choosen_value" : "Transaksi Kartu Debit",
+                                            "field_list_details" : [
+                                                {
+                                                    "field_title": "Customer ID",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                },
+                                                {
+                                                    "field_title": "Sub Transaksi Kartu",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                },
+                                                {
+                                                    "field_title": "Cust ID (New Format)",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                },
+                                                {
+                                                    "field_title": "Transaction ID (RRN)",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "choosen_value" : "Mesin EDC",
+                                            "field_list_details" : [
+                                                {
+                                                    "field_title": "Tanggal Transaksi",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                },
+                                                {
+                                                    "field_title": "Follow Up Date",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                },
+                                                {
+                                                    "field_title": "Nominal Transaksi",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                },
+                                                {
+                                                    "field_title": "Sub Mesin EDC",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                },
+                                                {
+                                                    "field_title": "Transaction ID (RRN)",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "choosen_value" : "Penarikan Uang di ATM",
+                                            "field_list_details" : [
+                                                {
+                                                    "field_title": "Follow Up Date",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                },
+                                                {
+                                                    "field_title": "Sub Penarikan uang di ATM",
+                                                    "field_type" : "input",
+                                                    "field_value" : "",
+                                                    "class_hierarchical_level": "l4",
+                                                    "dynamic_hirarchical_field" : []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+            
+        },
+        {
+            "choosen_value" : "Keluhan / Complaint", 
+            "field_list_details" : [
+                {
+                    "field_title": "Kategori",
+                    "field_type" : "dropdown",
+                    "field_value" : ["Abuse Promo", "Account Level"],
+                    "class_hierarchical_level": "l2",
+                    "dynamic_hirarchical_field" : []
+                }
+            ]
+            
+        }
+    ]
+    
+}
