@@ -80,6 +80,15 @@ export function addDynamicBehavior(formData) {
                     nestedContainer.querySelectorAll('.dynamic-dropdown').forEach(dropdown => {
                         dropdown.addEventListener('change', event => addDynamicBehavior(formData)); // Attach listeners recursively
                     });
+
+                    let selectElements = document.querySelectorAll('select');
+
+                    // Loop through each select element and initialize Choices.js with search enabled
+                    selectElements.forEach(function (selectElement) {
+                        new Choices(selectElement, {
+                            searchEnabled: true  // Enables the search functionality
+                        });
+                    });
                 }
             } else {
                 const nestedContainer = target.closest('.field-container').nextElementSibling;
