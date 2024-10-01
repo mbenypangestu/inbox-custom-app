@@ -17,7 +17,17 @@ export function generateField(field, isVisible = false) {
         fieldHtml += `<label for="${field.field_title}">${field.field_title}:</label>`;
         fieldHtml += `<input type="text" id="${field.field_title}" name="${field.field_title}" placeholder="${field.field_title}" />`;
         fieldHtml += `</div>`;
-    }
+    } else if (field.field_type === 'date') {
+        fieldHtml += `<div class="field-container ${visibilityClass}" data-level="${field.class_hierarchical_level}">`;
+        fieldHtml += `<label for="${field.field_title}">${field.field_title}:</label>`;
+        fieldHtml += `<input type="date" id="${field.field_title}" name="${field.field_title}" />`;
+        fieldHtml += `</div>`;
+    } else if (field.field_type === 'number') {
+        fieldHtml += `<div class="field-container ${visibilityClass}" data-level="${field.class_hierarchical_level}">`;
+        fieldHtml += `<label for="${field.field_title}">${field.field_title}:</label>`;
+        fieldHtml += `<input type="number" id="${field.field_title}" name="${field.field_title}" placeholder="${field.field_title}" />`;
+        fieldHtml += `</div>`;
+    } 
 
     // Check for nested dynamic fields and add them recursively, initially Hidden
     if (field.dynamic_hirarchical_field && field.dynamic_hirarchical_field.length > 0) {

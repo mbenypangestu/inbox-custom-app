@@ -46,7 +46,7 @@
                                 },
                                 {
                                     "field_title": "4 Digit Card Number",
-                                    "field_type" : "input",
+                                    "field_type" : "number",
                                     "field_value" : "",
                                     "class_hierarchical_level": "l3",
                                     "dynamic_hirarchical_field" : []
@@ -158,7 +158,7 @@
                                             "field_list_details" : [
                                                 {
                                                     "field_title": "Tanggal Transaksi",
-                                                    "field_type" : "input",
+                                                    "field_type" : "date",
                                                     "field_value" : "",
                                                     "class_hierarchical_level": "l4",
                                                     "dynamic_hirarchical_field" : []
