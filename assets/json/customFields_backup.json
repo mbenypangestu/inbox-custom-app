@@ -4,7 +4,8 @@
     "field_description": "",
     "field_value": [
         "Permintaan / Request",
-        "Keluhan / Complaint"
+        "Keluhan / Complaint",
+        "test"
     ],
     "class_hierarchical_level": "l1",
     "dynamic_hirarchical_field": [

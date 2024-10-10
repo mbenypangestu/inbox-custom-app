@@ -18,7 +18,7 @@ export function generateField(field, isVisible = false, requireds) {
         });
         fieldHtml += `</select>`;
         fieldHtml += `</div>`;
-    } else if (field.field_type === 'input') {
+    } else if (field.field_type === 'text') {
         fieldHtml += `<div class="field-container ${visibilityClass}" data-level="${field.class_hierarchical_level}">`;
         fieldHtml += `<label for="${field.field_title}">${field.field_title}:</label>`;
         fieldHtml += `<input type="text" id="${field.field_title}" name="${field.field_title}" placeholder="${field.field_description != "" ? field.field_description : field.field_title}" />`;
