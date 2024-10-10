@@ -21,7 +21,7 @@ export function generateField(field, isVisible = false, requireds) {
     } else if (field.field_type === 'input') {
         fieldHtml += `<div class="field-container ${visibilityClass}" data-level="${field.class_hierarchical_level}">`;
         fieldHtml += `<label for="${field.field_title}">${field.field_title}:</label>`;
-        fieldHtml += `<input type="text" id="${field.field_title}" name="${field.field_title}" placeholder="${field.field_title}" />`;
+        fieldHtml += `<input type="text" id="${field.field_title}" name="${field.field_title}" placeholder="${field.field_description != "" ? field.field_description : field.field_title}" />`;
         fieldHtml += `</div>`;
     } else if (field.field_type === 'date') {
         fieldHtml += `<div class="field-container ${visibilityClass}" data-level="${field.class_hierarchical_level}">`;
