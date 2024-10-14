@@ -4,7 +4,12 @@ let JsonData = null;
 let PayloadMessage = null;
 
 function runRenderForm() {
-    if (JsonData && PayloadMessage) {
+    console.log("JsonData == null", PayloadMessage)
+    if (PayloadMessage == null) {
+        const messageDisplay = document.getElementById('ticket-title-forbidden');
+        messageDisplay.innerText += '403 Access Forbidden';
+    } else if (JsonData && PayloadMessage) {
+        
         renderForm(JsonData, PayloadMessage);
     }
 }
@@ -30,9 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('message', function(event) {
     // console.log('Payload message: ', event.data);
-    const messageDisplay = document.getElementById('ticket-title');
-    messageDisplay.innerText += ' (#' + event.data.ticketData.ticketId + ')';
-
     PayloadMessage = event.data; 
 
     runRenderForm();
