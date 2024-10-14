@@ -1,18 +1,18 @@
 import { generateField, addDynamicBehavior } from '../templates/form.template.js';
 
-export function renderForm(formData) {
+export function renderForm(formData, payloadData) {
+    console.log("Json FormData", formData);
+    console.log("payloadData Mesage", payloadData);
+
     const formContainer = document.getElementById('formContainer');
     let formHtml = '<form id="customForm">';
 
-    // Generate and show the first layer dropdown
-    formHtml += generateField(formData, true, false);
+    formHtml += generateField(formData, payloadData, true, false);
 
-    // Submit button
     formHtml += '<button type="submit">Submit</button>';
     formHtml += '</form>';
 
     formContainer.innerHTML = formHtml;
 
-    // Add event listeners for dynamic dropdowns
     addDynamicBehavior(formData);
 }
