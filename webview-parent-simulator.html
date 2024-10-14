@@ -28,7 +28,7 @@
     <script>
         function sendPostMessage() {
             const iframe = document.getElementById('childFrame');
-            const messagePayload = {
+            let messagePayload = {
                 "agentProfile": {
                     "call_enabled": false,
                     "description": "Support Agent",
@@ -136,7 +136,7 @@
                     "xmpp": "user_64VbwguPfPx5YPzmxenei"
                 }
             };
-
+            // messagePayload = null;
             iframe.contentWindow.postMessage(messagePayload, '*');
         }
     </script>

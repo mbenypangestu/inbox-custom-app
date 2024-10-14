@@ -7,7 +7,10 @@ function runRenderForm() {
     console.log("JsonData == null", PayloadMessage)
     if (PayloadMessage == null) {
         const messageDisplay = document.getElementById('ticket-title-forbidden');
-        messageDisplay.innerText += '403 Access Forbidden';
+        
+        if (messageDisplay.innerText == "") {
+            messageDisplay.innerText += '403 Access Forbidden';
+        }
     } else if (JsonData && PayloadMessage) {
         
         renderForm(JsonData, PayloadMessage);
