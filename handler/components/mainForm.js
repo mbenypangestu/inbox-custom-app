@@ -13,12 +13,11 @@ export function renderForm(formData, payloadData) {
     // Generate and show the first layer dropdown
     formHtml += generateField(formData, true, false);
 
-    // Submit button
+
     formHtml += '<button type="submit">Submit</button>';
     formHtml += '</form>';
 
     formContainer.innerHTML = formHtml;
 
-    // Add event listeners for dynamic dropdowns
     addDynamicBehavior(formData);
 }
