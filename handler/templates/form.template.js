@@ -78,6 +78,7 @@ export function addDynamicBehavior(formData) {
 
                 // Loop through each select element and initialize Choices.js with search enabled
                 selectElements.forEach(function (selectElement) {
+                    console.log(selectElement, "selectElement")
                     new Choices(selectElement, {
                         searchEnabled: true  // Enables the search functionality
                     });
