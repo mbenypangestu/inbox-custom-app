@@ -1,15 +1,24 @@
 import { renderForm } from './components/mainForm.js';
 
+let JsonData = null;
+let PayloadMessage = null;
+
+function runRenderForm() {
+    if (JsonData && PayloadMessage) {
+        renderForm(JsonData, PayloadMessage);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('./assets/json/customFields.json')
         .then(response => response.json())
         .then(jsonData => {
-            console.log("jsonData", jsonData)
-            renderForm(jsonData);
+            JsonData = jsonData;  
+
+            runRenderForm();
 
             let selectElements = document.querySelectorAll('select');
 
-            // Loop through each select element and initialize Choices.js with search enabled
             selectElements.forEach(function (selectElement) {
                 new Choices(selectElement, {
                     searchEnabled: true  // Enables the search functionality
@@ -17,4 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         })
         .catch(error => console.error('Error fetching JSON:', error));
+});
+
+window.addEventListener('message', function(event) {
+    console.log('Payload message: ', event.data);
+
+    const messageDisplay = document.getElementById('ticket-title');
+    messageDisplay.innerText += ' (#' + event.data.ticketData.ticketId + ')';
+
+    PayloadMessage = event.data; 
+
+    runRenderForm();
 });

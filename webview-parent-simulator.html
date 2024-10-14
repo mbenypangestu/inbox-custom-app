@@ -22,7 +22,123 @@
 </head>
 <body>
     <div class="container-frame">
-        <iframe src="index.html" title="Website in iFrame"></iframe>
+        <iframe id="childFrame" src="index.html" title="Website in iFrame" onload="sendPostMessage()"></iframe>
     </div>
+
+    <script>
+        function sendPostMessage() {
+            const iframe = document.getElementById('childFrame');
+            const messagePayload = {
+                "agentProfile": {
+                    "call_enabled": false,
+                    "description": "Support Agent",
+                    "email": "beny.m@yellow.ai",
+                    "id": 79372,
+                    "languages": null,
+                    "max_conn_tickets": 50,
+                    "name": "Beny Pangestu M",
+                    "owner": "x1652969849228",
+                    "profile_picture": "https://cdn.yellowmessenger.com/773004.png",
+                    "user_id": 109355,
+                    "username": "benymyellowai",
+                    "voip_call_enabled": false,
+                    "voip_password": null,
+                    "voip_username": null,
+                    "webrtc_username": null,
+                    "xmpp_username": "user_64VbwguPfPx5YPzmxenei"
+                },
+                "agentWhoClosed": "benymyellowai",
+                "autoClose": false,
+                "code": "ticket-closed",
+                "data": [],
+                "ticketData": {
+                    "__v": 0,
+                    "_id": "63cfebfba37af12315efc880",
+                    "agentActiveStatus": null,
+                    "agentCsatScore": null,
+                    "agentCurrentHandlingTicketsCount": 1,
+                    "agentLanguage": "en",
+                    "agentProfile": {
+                        "call_enabled": false,
+                        "description": "Support Agent",
+                        "email": "beny.m@yellow.ai",
+                        "id": 79372,
+                        "languages": null,
+                        "max_conn_tickets": 50,
+                        "name": "Beny Pangestu M",
+                        "owner": "x1652969849228",
+                        "profile_picture": "https://cdn.yellr.com/2.png",
+                        "user_id": 109355,
+                        "username": "benymyellowai",
+                        "voip_call_enabled": false,
+                        "voip_password": null,
+                        "voip_username": null,
+                        "webrtc_username": null,
+                        "xmpp_username": "user_64VbwguPfPx5YPzmxenei"
+                    },
+                    "assignedByAdmin": false,
+                    "assignedTime": "2023-01-24T14:32:28.185Z",
+                    "assignedTo": "benymyellowai",
+                    "autoDetectLanguage": false,
+                    "autoStartCall": false,
+                    "autoTranslate": false,
+                    "botId": "x1652969849228",
+                    "category": "GROUPTEST",
+                    "collaborators": [
+                        {
+                        "_id": "63cfebfca37af10920efc897",
+                        "name": "Beny Pangestu M",
+                        "username": "benymyellowai",
+                        "xmppUsername": "user_64VbwguPfPx5YPzmxenei"
+                        }
+                    ],
+                    "comments": [],
+                    "contact": {
+                        "email": "",
+                        "name": "Beny",
+                        "phone": "6282334901664"
+                    },
+                    "createdAt": "2023-01-24T14:32:28.198Z",
+                    "createdFromProactiveNotification": false,
+                    "isNewTicket": false,
+                    "issue": "Customer Query",
+                    "lastAgentMessageTime": null,
+                    "lastBotMessageTime": null,
+                    "lastMessageTime": 1674570747516,
+                    "lastUserMessageTime": null,
+                    "logs": [],
+                    "manualAssignment": false,
+                    "preferredAgent": false,
+                    "preferredAgentFallback": false,
+                    "priority": "MEDIUM",
+                    "reassignmentLog": [],
+                    "replyCount": 0,
+                    "resolvedTime": "2023-01-24T14:32:38.143Z",
+                    "responded": false,
+                    "sessionId": "63cfeb1c32ef200001185fff",
+                    "severity": "MEDIUM",
+                    "sipCall": false,
+                    "source": "whatsapp",
+                    "status": "RESOLVED",
+                    "tags": [],
+                    "ticketCsatScore": null,
+                    "ticketId": "100269",
+                    "ticketType": "livechat",
+                    "timestamp": "2023-01-24T14:32:27.516Z",
+                    "uid": "6282334901664",
+                    "unreadCount": 0,
+                    "updatedAt": "2023-01-24T14:32:38.144Z",
+                    "userActiveStatus": null,
+                    "userLanguage": "en",
+                    "userReplyCount": 0,
+                    "voiceCall": false,
+                    "whatsappBusinessId": "6282112144675",
+                    "xmpp": "user_64VbwguPfPx5YPzmxenei"
+                }
+            };
+
+            iframe.contentWindow.postMessage(messagePayload, '*');
+        }
+    </script>
 </body>
 </html>
