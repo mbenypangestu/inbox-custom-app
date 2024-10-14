@@ -18,7 +18,7 @@ h1 {
 
 label {
     display: block;
-    margin: 7px 0;
+    margin: 20px 0px 7px 0px;
     font-weight: bold;
     font-size: smaller;
 }
@@ -28,27 +28,53 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #c4c4c4;
     border-radius: 5px;
+    background-color: #f9f9f9;
+    
 }
 
 input {
-    width: 96%
+    width: 96%;
+    background-color: #f9f9f9;
+    border-color: #c4c4c4;
+    -webkit-transition: border-color 300ms linear;
+    -ms-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
+
+input:hover {
+    -webkit-transition: border-color 300ms linear, border-width 300ms linear;
+    -ms-transition: border-color 300ms linear, border-width 300ms linear;
+    transition: border-color 300ms linear, border-width 300ms linear;
+    border-color: #007ED4;
 }
 
 button {
     margin-top: 15px;
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    /* background-color: #007BFF; */
+    background-color: #fa6505;
+    border-color: #c9540d;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .045);
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .12);
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #0056b3;
+    /* background-color: #0056b3; */
+    background-color: #C9540D;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
 }
 
 /* Hide conditional fields by default */
@@ -61,13 +87,21 @@ button:hover {
 }
 
 .choices__inner {
-    background-color: white;
+    background-color: #f9f9f9;
     min-height: 20px;
     font-size: smaller;
     width: 96%;
     border-radius: 5px;
     padding: 5px;
     z-index: 100;
+    border-color: #c4c4c4;
+}
+
+.choices__inner:hover {
+    -webkit-transition: border-color 300ms linear, border-width 300ms linear;
+    -ms-transition: border-color 300ms linear, border-width 300ms linear;
+    transition: border-color 300ms linear, border-width 300ms linear;
+    border-color: #007ED4;
 }
 
 
