@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
     margin: 0;
 }
 
@@ -9,7 +9,6 @@ body {
     margin: 0 auto;
     background: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -35,7 +34,7 @@ input {
 }
 
 input {
-    width: 96%;
+    width: 90%;
     background-color: #f9f9f9;
     border-color: #c4c4c4;
     -webkit-transition: border-color 300ms linear;
@@ -90,7 +89,7 @@ button:hover {
     background-color: #f9f9f9;
     min-height: 20px;
     font-size: smaller;
-    width: 96%;
+    width: 95%;
     border-radius: 5px;
     padding: 5px;
     z-index: 100;
