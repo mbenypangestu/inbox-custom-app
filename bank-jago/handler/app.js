@@ -10,7 +10,7 @@ function runRenderForm() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('./assets/json/customFields.json')
+    fetch('./bank-jago/assets/json/customFields.json')
         .then(response => response.json())
         .then(jsonData => {
             JsonData = jsonData;  

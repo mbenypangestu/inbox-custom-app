@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion Parcel - Salesforce Case</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="sf-shell">
+        <div class="sf-tabs" role="tablist" aria-label="Case tabs">
+            <button id="tabCreateCase" class="sf-tab is-active" type="button" role="tab" aria-selected="true">
+                Create Case
+            </button>
+            <button id="tabSearchCase" class="sf-tab" type="button" role="tab" aria-selected="false">
+                Search Case
+            </button>
+        </div>
+        <div class="sf-card">
+            <div class="sf-header">
+                <div class="sf-title-wrap">
+                    <span class="sf-title-icon" aria-hidden="true">📁</span>
+                    <h4 id="ticket-title">Create Case</h4>
+                </div>
+                <button type="button" class="sf-collapse-btn" aria-label="Toggle case form">▾</button>
+            </div>
+            <div id="createCasePanel" class="sf-panel">
+                <div id="formContainer"></div>
+            </div>
+            <div id="searchCasePanel" class="sf-panel hidden">
+                <div class="sf-search-wrap">
+                    <p class="sf-search-title">Find Existing Case</p>
+                    <p class="sf-search-subtitle">Search by case number to quickly open an existing case.</p>
+                    <label for="caseSearchInput">Case Number</label>
+                    <div class="sf-search-row">
+                        <input id="caseSearchInput" class="sf-search-input" type="text" placeholder="Enter case number" />
+                        <button class="sf-search-btn" type="button">Search</button>
+                    </div>
+                    <div class="sf-search-hints">
+                        <span class="sf-hint-chip">100269</span>
+                        <span class="sf-hint-chip">12179580</span>
+                    </div>
+                    <div class="sf-search-result">
+                        <p class="sf-result-empty">No search executed yet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./handler/app.js"></script>
+</body>
+</html>
